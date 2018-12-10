@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include "Cleaner.h"
 
 using namespace std;
 
@@ -18,8 +19,7 @@ int main(int argc, char** argv) {
     string outputFormat{};
     int charLimit{};
 
-    try
-    {
+    try {
         fileName = argv[1];
         outputFormat = argv[2];
 
@@ -30,14 +30,9 @@ int main(int argc, char** argv) {
             showUsage();
             return -1;
         }
-    }
-    catch(const std::exception& e)
-    {
+    } catch (const std::exception& e) {
         std::cerr << "ERROR: Incorrect argument list." << endl;
         showUsage();
         return -1;
     }
-    
-    
-
 }
