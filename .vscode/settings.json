@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.script": "lua",
+        "*.gui_script": "lua",
+        "xstring": "cpp",
+        "iomanip": "cpp"
+    }
+}
